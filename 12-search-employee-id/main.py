@@ -6,15 +6,14 @@ Description: Python program to search employee details using employee ID.
 """
 
 employees = { 
-            101: {"name": "X", "salary": 55000},
-            102: {"name": "y", "salary": 65000},
-            103: {"name": "z", "salary": 95000}
+            101: "X",
+            102: "y",
+            103: "z",
             }
 
 id = int(input("Enter Employee ID to search: "))
 
 if id in employees:
-    details = employees[id]
-    print(f"Record Found: Name: {details['name']}, Salary: {details['salary']}")
+    print(f"Record Found: Name: {employees[id]}")
 else:
     print("Record not found!")
